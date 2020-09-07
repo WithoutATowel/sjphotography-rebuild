@@ -44,5 +44,9 @@ python3 manage.py migrate
 
 python3 manage.py createsuperuser
 
+TODO
+- Do I need both static and staticfiles? Added the former to resolve a Heroku deploy error.
+- Am I actually using Whitenoise? Remove?
+
 
 
