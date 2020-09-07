@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div id="home">
+        <div class="container">
+            <div class="row">
+                <img src="{% static '/images/sam.jpg' %}" class="col s12 m3" id="sam">
+                <div class="col s12 m9" id="bio">
+                    <div id="text-content">
+                        <h1>Hi, I'm Sam</h1>
+                        <p >An avid photographer since childhood, I did not pursue the field seriously until I retired in 2004. After several college courses and many hours of studying on my own, I focused initially on travel photography. However, in recent years my interest has turned to making photo-composites, which are assembled using Adobe Photoshop and other digital tools. I like to think of my current work as &quot;<a href="https://arthistoryunstuffed.com/postmodernism-in-photography/">post-modernist</a>&quot;. My goal is no longer to produce a &quot;pretty picture,&quot; but rather one that inspires the viewer to think, or at least to look at things in a new way. My composites often contain an implied narrative, but one that is meant to be derived in part from the viewer’s own thoughts. For example, I frequently employ symbolism – obviously, symbols can mean different things to different people. Among the well-known photographers who have influenced my work are Jerry Uelsman, Thomas Hart Benton and Richard Avedon. And, in the tradition of Larry Clark, I will shut up and let the photographs speak for themselves.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div id="show-collection">
+        <div class="container">
+            <h1>{{ collection.name }}</h1>
+            <p>{{ collection.description }}</p>
+            <div id="thumbs">
+                {% for photo in photos %}
+                    <a href="#{{ photo.id }}" class="modal-trigger">
+                        <div class="thumb-container">
+                            {# This is the static version for testing #}
+                            <img class="photo-thumb" src="{% static '' %}images/{{ photo.image.name }}" />
+                        </div>
+                    </a>
+                    {# This is the static version for testing #}
+                    <img id="{{ photo.id }}" class="modal" src="{% static '' %}images/{{ photo.image.name }}" />
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SJS</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand|Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/collections">Collections</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="/index">Home</a></li>
+            <li><a href="/collections">Collections</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+        <footer>&copy; Copyright SJ Photography 2018</footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+        <script src="{% static 'app.js' %}"></script>
+    </body>
+</html>
