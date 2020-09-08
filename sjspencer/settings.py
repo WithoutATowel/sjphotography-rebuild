@@ -145,7 +145,7 @@ django_heroku.settings(locals())
 
 # Access AWS web UI at https://console.aws.amazon.com/console/home
 #Access S3 specifically at https://s3.console.aws.amazon.com/s3/home
-Sets S3 as the place to store your MEDIA files.
+#Sets S3 as the place to store your MEDIA files.
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID', '')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
