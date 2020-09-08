@@ -10,10 +10,28 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
 }
 
 nav {
-    background-color: $color-one;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    float: none;
+    text-align: center;
+    nav ul {
+        display: inline-block;
+        margin: 0 auto;
+        li a {
+            color: black !important;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        i {
+            color: black;
+        }
+    }
+
 }
 
 main {
