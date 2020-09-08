@@ -61,7 +61,7 @@ COMMANDS
             - Informs SASS to watch the file and update the CSS whenever SASS file changes.
 
 TODO
-- Do I need both static and staticfiles? Added the former to resolve a Heroku deploy error.
+- Some pictures distorted on mobile. Looks like the modal has a max-height, and images are squished to fit.
 - Am I actually using Whitenoise? Remove?
 
 
