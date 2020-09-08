@@ -11,11 +11,13 @@
                     <a href="#{{ photo.id }}" class="modal-trigger">
                         <div class="thumb-container">
                             {# This is the static version for testing #}
-                            <img class="photo-thumb" src="{% static '' %}images/{{ photo.image.name }}" />
+                            {# <img class="photo-thumb" src="{% static '' %}images/{{ photo.image.name }}" /> #} 
+                            <img class="photo-thumb" src="{{ photo.image.url }}" />
                         </div>
                     </a>
                     {# This is the static version for testing #}
-                    <img id="{{ photo.id }}" class="modal" src="{% static '' %}images/{{ photo.image.name }}" />
+                    {# <img id="{{ photo.id }}" class="modal" src="{% static '' %}images/{{ photo.image.name }}" /> #}
+                    <img id="{{ photo.id }}" class="modal" src="{{ photo.image.url }}" />
                 {% endfor %}
             </div>
         </div>

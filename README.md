@@ -1,3 +1,21 @@
+STEPS FOR DOWNLOADING AND INSTALLING LOCALLY
+1. Make sure virtualenv is installed or run `sudo pip install virtualenv`
+2. Clone the github repository
+3. cd into directory
+4. pip3 install -r requirements.txt
+5. Make sure you have Postgres installed
+5.5 Might need to create the database manually first...? Or might be created automatically when running migrations?
+6. Run `manage.py migrate` 
+7. See the next section for steps to make sure the code is configured for local
+8. Run `python3 manage.py runserver`
+9. Go to `http://127.0.0.1:8000/`
+
+STEPS FOR RUNNING LOCALLY, ONCE INSTALLED
+1. Comment off AWS storage settings at end of settings.py
+2. Uncomment STATIC_ROOT, STATIC_URL, STATICFILES_DIRS near end of settings.py
+3. Comment toggle gallery/templates/collections.html to use cover_photo.name instead of cover_photo.url
+4. Comment toggle gallery/templates/show_collection.html to use photo.image.name instead of photo.image.url
+
 
 RANDOM NOTES
 "sjspencer" is the "project", and "gallery" is the "app". One project can have many apps.

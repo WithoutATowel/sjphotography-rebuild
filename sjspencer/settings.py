@@ -121,13 +121,13 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-# Comment this out for deployment to Heroku, but uncomment it for local testing?
+# Comment this out for deployment to Heroku, but uncomment it for local testing
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # STATIC_URL = '/static/'
 
 # Places for collectstatic to find static files.
-# Comment this out for deployment to Heroku, but uncomment it for local testing?
+# Comment this out for deployment to Heroku, but uncomment it for local testing
 
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, 'static'),
@@ -144,8 +144,8 @@ import django_heroku
 django_heroku.settings(locals())
 
 # Access AWS web UI at https://console.aws.amazon.com/console/home
-# Access S3 specifically at https://s3.console.aws.amazon.com/s3/home
-# Sets S3 as the place to store your MEDIA files.
+Access S3 specifically at https://s3.console.aws.amazon.com/s3/home
+Sets S3 as the place to store your MEDIA files.
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID', '')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
