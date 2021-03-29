@@ -31,13 +31,6 @@ FILE STORAGE
 
 RANDOM NOTES
 - "sjspencer" is the "project", and "gallery" is the "app". One project can have many apps.
-- Admin:
-    - Dad's login:
-        - Username --> email
-        - Password --> young muscle
-    - My login:
-        - Username --> LDAP
-        - Password --> formula + Dad
 - Worried that the requirements.txt file is full of junk? You can delete it and run "pip freeze > requirements.txt" to automatically generate a new one based on what's already installed. Note that this will not work for a fresh download from github... in that scenario, the existing requirements.txt file dictates what gets installed.
 - AWS access credentials manually entered into the "settings" section of the Heroku project as "Config Vars"
 - https://devcenter.heroku.com/articles/django-app-configuration
