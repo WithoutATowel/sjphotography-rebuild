@@ -56,5 +56,8 @@ COMMANDS
 TODO
 - Am I actually using Whitenoise? Remove?
 
+4/23/23
+Removed psycopg2==2.8.6 from requirements.txt, updated psycopg2-binary to latest version
+
 
 
